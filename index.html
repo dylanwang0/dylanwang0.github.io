@@ -9,14 +9,28 @@
     <title> Dylan Wang </title>
   </head>
   <body>
+
     <section class = "home" id = "home">
+
       <div class = "menu">
-        <li><a href = "#home"> Home <i class="fas fa-home"></i></a></li>
-        <li><a href = "#about"> About <i class="fas fa-user"></i></a></li>
-        <li><a href = "#projects"> Projects <i class="fas fa-tasks"></i></a></li>
-        <li><a href = "#resume"> Resume <i class="fas fa-file"></i></a></li>
-        <li><a href = "#contact"> Contact <i class="fas fa-phone-volume"></i></a></li>
+        <div class="container" style="cursor: pointer;" onclick="window.location='#home';">
+          <li><a href = "#home"><i class="fas fa-home"></i></a></li>
+        </div>
+        <div class="container" style="cursor: pointer;" onclick="window.location='#about';">
+          <li><a href = "#about"><i class="fas fa-user"></i></a></li>
+        </div>
+        <div class="container" style="cursor: pointer;" onclick="window.location='#projects';">
+          <li><a href = "#projects"><i class="fas fa-tasks"></i></a></li>
+        </div>
+        <div class="container" style="cursor: pointer;" onclick="window.location='#resume';">
+          <li><a href = "#resume"><i class="fas fa-file"></i></a></li>
+        </div>
+        <div class="container" style="cursor: pointer;" onclick="window.location='#contact';">
+          <li><a href = "#contact"><i class="fas fa-phone-volume"></i></a></li>
+        </div>
       </div>
+
+
       <div class = "box">
         <div class = "nametitle">Dylan Wang</div>
         <div class = "subtitle">Computer Science Student</div>
@@ -30,11 +44,20 @@
         </ul>
       </div>
     </section>
+
+    <div class = "blank">
+    </div>
+
     <section class = "about" id = "about">
       <div class = "max-width">
         <h2 class = "title"> About Me </h2>
         <h3 class = "title2"> An Introduction Of Myself </h3>
+
         <div class = "about-info">
+          <img src="Mountains.jpeg" alt = "" class="profile-img">
+          <div class = "text"> I am a first year university student studying computer science at the University of Waterloo. I show great interest towards using my programming skills to revolutionize technology and create solutions to many of the worlds problems. Furthermore, I am interested in learning about many aspects of artifical intelligence like machine learning and deep learning. When I'm not programming, I enjoy playing badminton, eating out with friends, and going on long walks.</div>
+
+          <!--
           <div class = "column left">
             <img src="Mountains.jpeg" alt = "" class="profile-img">
           </div>
@@ -53,6 +76,8 @@
             <div class = "basicinfo"> Expected Graduation: May 2026 </div>
           </br>
           </div>
+        -->
+
           <!--
           <div class = "skills">
             <div class = "text"> Skills </div>
@@ -61,6 +86,18 @@
           </div>
         -->
         </div>
+        <div class = "second-info">
+          <div class = "profile">
+            <div class = "basicinfo"> Full Name: Dylan Wang</div>
+          </br>
+            <div class = "basicinfo"> Major: Computer Science </div>
+          </br>
+            <div class = "basicinfo"> School: University of Waterloo </div>
+          </br>
+            <div class = "basicinfo"> Expected Graduation: May 2026 </div>
+          </br>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -68,6 +105,7 @@
       <div class = "max-width">
         <h2 class = "title"> Projects </h2>
         <h3 class = "title2"> These Are My Projects </h3>
+
         <div class="row">
           <div class="container">
             <a href="https://github.com/dylanwang0/DubGProject" target="_blank"><img src="DubGPic.png" alt = "" class="first"></a>
@@ -89,8 +127,6 @@
             <a href="https://github.com/dylanwang0/HuffmanDecodingProject" target="_blank"><div class="projname">Huffman Decoder</div></a>
             <a href="https://github.com/dylanwang0/HuffmanDecodingProject" target="_blank"><div class="projdes">A program that decodes encoded data from a huffman encoder. It uses a binary tree and features tree traversion to determine corresponding characters. See the Huffman Encoder made by Braydon Wang.</div></a>
           </div>
-        </div>
-        <div class="row">
           <div class="container">
             <a href="#"><img src="PersonalWebsite.png" alt = "" class="first"></a>
             <a href="#"><div class="projname">Insert Title</div></a>
@@ -112,6 +148,7 @@
             <a href="#"><div class="projdes">Insert Description.</div></a>
           </div>
         </div>
+
       </div>
     </section>
 
@@ -119,8 +156,10 @@
       <div class = "max-width">
         <h2 class = "title"> Resume </h2>
         <h3 class = "title2"> My Knowledge and Experience </h3>
+
+
         <div class = "resume-info">
-          <div class = "column left">
+          <div class = "resume-text">
             <div class = "basicinfo"> Programming Languages: Java, Python, HTML/CSS, C++</div>
           </br>
             <div class = "basicinfo"> Awards </div>
@@ -128,16 +167,16 @@
             <div class = "basicinfo"> CCC 2021: 135th, 95th Percentile</div>
             <div class = "basicinfo"> CSMC 2020: 22nd, 99th Percentile</div>
             <div class = "basicinfo"> CCC 2020: 427th, 85th Percentile</div>
-          </div>
-          <div class = "column right">
-            <div class = "text"> Work Experience </div>
-
           </br>
+            <div class = "text"> Work Experience </div>
+          </br>
+
             <div class = "text"> Education </div>
             <div class = "text"> Bachelor's Degree in Computer Science At The University Of Waterloo</div>
             <div class = "text"> High School Diploma At Richmond Hill High School</div>
           </div>
         </div>
+
       </div>
     </section>
 
@@ -145,15 +184,20 @@
       <div class = "max-width">
         <h2 class = "title"> Contact </h2>
         <h3 class = "title2"> Let's Talk </h3>
+
         <div class = "contact-info">
+
           <i class="fas fa-envelope-open-text"></i>
           <div class = "text"> dylan.s.wang@gmail.com </div>
+
           <i class="fab fa-linkedin-in"></i>
-          <div class = "text"> My Account </div>
+          <a href="https://www.linkedin.com/in/dylan-wang-503a00214/" target="_blank"><div class="text">My Profile</div></a>
           <i class="fab fa-discord"></i>
           <div class = "text"> Wangster77#0837 </div>
           <a href="#home"><i class="fas fa-arrow-alt-circle-up"></i></a>
+
         </div>
+
       </div>
     </section>
 
