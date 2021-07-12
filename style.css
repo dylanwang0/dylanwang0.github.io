@@ -200,17 +200,19 @@ ul{
   width: 230px;
   height: 230px;
   margin: 25px;
+
 }
 .about .about-info .text{
   max-width: 65%;
   min-width: 250px;
   font-size: 25px;
   font-weight: 300;
-  margin: 25px;
+  margin-left: 15px;
   font-family: 'Roboto Slab' ,sans-serif;
 }
 .about .second-info{
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -226,6 +228,62 @@ ul{
   font-weight: 300;
   margin-bottom: 10px;
   font-family: 'Roboto Slab' ,sans-serif;
+}
+.about .second-info .skills{
+  padding-top: 50px;
+  text-align: center;
+  width: 65%;
+}
+.about .second-info .skills .skillstitle{
+  color: #FF7400;
+  font-size: 35px;
+  font-weight: 350;
+  margin-bottom: 10px;
+  font-family: 'Roboto Slab' ,sans-serif;
+}
+.about .second-info .skills .skills-info{
+  text-align: left;
+}
+.about .second-info .skills .skills-info .bars{
+  margin-bottom: 15px;
+}
+.about .second-info .skills .skills-info .info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about .second-info .skills .skills-info span{
+  color: lightgrey;
+  font-weight: 300;
+  font-size: 18px;
+  margin-bottom: 3px;
+  font-family: 'Roboto Slab' ,sans-serif;
+}
+.about .second-info .skills .skills-info .line{
+  height: 5px;
+  width: 100%;
+  background: lightgrey;
+  position: relative;
+}
+.about .second-info .skills .skills-info .line::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #FF7400;
+}
+.about .second-info .skills .skills-info .java::before{
+  width: 80%;
+}
+.about .second-info .skills .skills-info .python::before{
+  width: 65%;
+}
+.about .second-info .skills .skills-info .cpp::before{
+  width: 55%;
+}
+.about .second-info .skills .skills-info .htmlcss::before{
+  width: 40%;
 }
 
 @media(max-width: 700px){
