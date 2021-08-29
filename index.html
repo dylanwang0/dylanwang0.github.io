@@ -9,29 +9,33 @@
     <meta name="image" property="og:image" content="https://dylanwang0.github.io/PersonalWebsite.png"/>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="icon" href="https://dylanwang0.github.io/logo.png">
     <script src="https://kit.fontawesome.com/cdc91146bc.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title> Dylan Wang </title>
   </head>
   <body>
-
+    <div id="progressBar"></div>
+    <div id="scrollPath"></div>
     <section class = "home" id = "home">
 
       <div class = "menu">
-        <div class="container" style="cursor: pointer;" onclick="window.location='#home';">
+        <div class="container1" style="cursor: pointer;" onclick="window.location='#home';">
           <li><a href = "#home"><i class="fas fa-home"></i></a></li>
         </div>
-        <div class="container" style="cursor: pointer;" onclick="window.location='#about';">
+        <div class="container2" style="cursor: pointer;" onclick="window.location='#about';">
           <li><a href = "#about"><i class="fas fa-user"></i></a></li>
         </div>
-        <div class="container" style="cursor: pointer;" onclick="window.location='#projects';">
+        <div class="container3" style="cursor: pointer;" onclick="window.location='#projects';">
           <li><a href = "#projects"><i class="fas fa-tasks"></i></a></li>
         </div>
-        <div class="container" style="cursor: pointer;" onclick="window.location='#resume';">
+        <div class="container4" style="cursor: pointer;" onclick="window.location='#resume';">
           <li><a href = "#resume"><i class="fas fa-file"></i></a></li>
         </div>
-        <div class="container" style="cursor: pointer;" onclick="window.location='#contact';">
+        <div class="container5" style="cursor: pointer;" onclick="window.location='#contact';">
           <li><a href = "#contact"><i class="fas fa-phone-volume"></i></a></li>
         </div>
+
       </div>
 
 
@@ -118,6 +122,7 @@
         <h2 class = "title"> Projects </h2>
         <h3 class = "title2"> These Are My Projects </h3>
 
+
         <div class="row">
           <div class="container">
             <a href="https://github.com/dylanwang0/DubGProject" target="_blank"><img src="DubGPic.png" alt = "" class="first"></a>
@@ -160,6 +165,8 @@
             <a href="#"><div class="projdes">Insert Description.</div></a>
           </div>
         </div>
+
+
 
       </div>
     </section>
@@ -212,6 +219,11 @@
 
       </div>
     </section>
+    <div class="loader-wrapper">
+      <span class="loader"></span>
+    </div>
+
+    <script src="script.js"></script>
 
   </body>
 
